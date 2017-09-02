@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sam's Salary Calculator</title>
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="employee.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
+        <header>
+            <h1> Salary Calculator</h1>
+        </header>
+        <main>
+            <section id = 'employeeAdd'>
+                <h2>Add an Employee:</h2>
+                <input type='text' placeholder='Employee First Name' id='firstNameIn'/>
+                <input type='text' placeholder='Employee Last Name' id='lastNameIn'/>
+                <input type='text' placeholder='Employee ID Number' id='numberIn'/>
+                <input type='text' placeholder='Employee Job Title' id='titleIn'/>
+                <input type='text' placeholder='Employee Annual Salary' id='salaryIn'/>
+               
+                <button id='submitEmployeeButton'>Submit</button>
+            </section>
+            <section id = 'employeeList'>
+                <h2>Current Employees</h2>
+                <p id="employeeList">
+                </p>
+            </section>
+
+            <section id= 'totalCostMonthly'><p></p>
+            </section>
+            <section>
+                    <button id='monthlyCostsButton'>Calculate Monthly Costs</button>
+            </section>
+        </main>
+
+
     </body>
 </html>
